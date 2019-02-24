@@ -10,6 +10,12 @@ function createWindow () {
   mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
+    fullscreen: true,   // 全屏窗口
+    kiosk: true,        // 服务亭模式
+    frame: false,       // 是否显示窗口边缘框架
+    backgroundColor: '#fff',
+    resizable: false,   // 不可更改窗口尺寸
+    maximizable: true,  // 支持最大化
     webPreferences: {
       nodeIntegration: true
     }
